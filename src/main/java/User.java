@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class User {
+public class User {
+    public static void main(String[] args) {
+        System.out.println();
+    }
 }
