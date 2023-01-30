@@ -31,22 +31,6 @@ public class UserDao {
         return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
-//    public User getId(User user) {
-//        try {
-//            Connection connection = DbUtil.connect();
-//            PreparedStatement preparedStatement = connection.prepareStatement(GET_ID);
-//            preparedStatement.setInt(1, user.getId());
-//            ResultSet rs = preparedStatement.executeQuery();
-//            if (rs.next()) {
-//                int i = rs.getInt("id");
-//                System.out.println("Your id: " + i);
-//            }
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//        return user;
-//    }
-
 
     public User create(User user) {
         try (Connection con = DbUtil.connect()) {
@@ -143,6 +127,22 @@ public class UserDao {
         usersArray[users.length] = u;
         return usersArray;
     }
+
+    //    public User getId(User user) {
+//        try {
+//            Connection connection = DbUtil.connect();
+//            PreparedStatement preparedStatement = connection.prepareStatement(GET_ID);
+//            preparedStatement.setInt(1, user.getId());
+//            ResultSet rs = preparedStatement.executeQuery();
+//            if (rs.next()) {
+//                int i = rs.getInt("id");
+//                System.out.println("Your id: " + i);
+//            }
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//        return user;
+//    }
 }
 
 

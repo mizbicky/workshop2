@@ -4,7 +4,7 @@ Workshop 2 is program for creating new user and insert data of users into sql da
 
 ## Installation
 
-For working with this program you have to creat sql database with table calld "users"
+For working with this program you have to creat sql database with table calld "users" (dump.sql)
 
 ## Contributing
 
